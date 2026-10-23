@@ -1,0 +1,6 @@
+timm==1.0.30
+cupy-cuda13x==14.2.0
+torch==2.14.1
+spikingjelly==0.0.0.0.14
+PyYAML==6.0.3
+tensorboard==2.21.0

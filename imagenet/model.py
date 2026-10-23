@@ -1,3 +1,5 @@
+import inspect
+
 import torch
 import torch.nn as nn
 from spikingjelly.clock_driven.neuron import MultiStepLIFNode
@@ -248,6 +250,9 @@ class vit_snn(nn.Module):
 
 @register_model
 def Spikingformer(pretrained=False, **kwargs):
+    # timm >= 1.0 injects args like `pretrained_cfg_overlay` / `pretrained_cfg`,
+    # and test.py passes some legacy args (e.g. `drop_block_rate`) — keep only what vit_snn accepts
+    kwargs = {k: v for k, v in kwargs.items() if k in inspect.signature(vit_snn).parameters}
     model = vit_snn(
         **kwargs
     )

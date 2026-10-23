@@ -11,12 +11,13 @@ from spikingjelly.clock_driven import functional
 import torch
 import torch.nn as nn
 import torchvision.utils
+from timm.layers import convert_splitbn_model
 from torch.nn.parallel import DistributedDataParallel as NativeDDP
 
 from timm.data import create_dataset, resolve_data_config, Mixup, FastCollateMixup, AugMixDataset, create_loader
 # from loader import create_loader
 from timm.models import create_model, safe_model_name, resume_checkpoint, load_checkpoint, \
-    convert_splitbn_model, model_parameters
+    model_parameters
 from timm.utils import *
 from timm.loss import LabelSmoothingCrossEntropy, SoftTargetCrossEntropy, JsdCrossEntropy
 from timm.optim import create_optimizer_v2, optimizer_kwargs
