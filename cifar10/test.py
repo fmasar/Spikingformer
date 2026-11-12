@@ -6,7 +6,7 @@ import logging
 from collections import OrderedDict
 from contextlib import suppress
 from datetime import datetime
-from spikingjelly.clock_driven import functional
+from spikingjelly.activation_based import functional
 
 import torch
 import torch.nn as nn

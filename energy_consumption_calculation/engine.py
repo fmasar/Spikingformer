@@ -15,7 +15,7 @@ import torch
 import torch.nn as nn
 from progress.bar import Bar as Bar
 try:
-    from spikingjelly.clock_driven import surrogate, neuron, functional
+    from spikingjelly.activation_based import surrogate, neuron, functional
 except:
     from spikingjelly.activation_based import surrogate, neuron, functional
 

@@ -1,7 +1,7 @@
 dataset: imagenet
 num_classes: 1000
 img_size: 224
-dim: 768
+dim: 384
 patch_size: 16
 num_heads: 8
 mlp_ratio: 4
@@ -19,7 +19,7 @@ scale:
     - 1.0
 interpolation: bicubic
 train_interpolation: bicubic
-aa: rand-m9-mstd0.5-inc1
+aa: rand-m7-mstd0.5-inc1
 mixup: 0.8
 mixup_off_epoch: 0
 mixup_prob: 1.0

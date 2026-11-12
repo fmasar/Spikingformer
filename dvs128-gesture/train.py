@@ -9,7 +9,7 @@ from torchvision import transforms
 import math
 from torch.cuda import amp
 import model, utils
-from spikingjelly.clock_driven import functional
+from spikingjelly.activation_based import functional
 from spikingjelly.datasets import cifar10_dvs
 from spikingjelly.datasets import dvs128_gesture
 from timm.models import create_model

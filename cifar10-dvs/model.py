@@ -1,9 +1,9 @@
 import torch
 import torch.nn as nn
-from spikingjelly.clock_driven.neuron import MultiStepParametricLIFNode, MultiStepLIFNode
-from spikingjelly.clock_driven import layer
-from timm.models.layers import to_2tuple, trunc_normal_, DropPath
-from timm.models.registry import register_model
+from spikingjelly.activation_based.neuron import MultiStepParametricLIFNode, MultiStepLIFNode
+from spikingjelly.activation_based import layer
+from timm.layers import to_2tuple, trunc_normal_, DropPath
+from timm.models import register_model
 from timm.models.vision_transformer import _cfg
 from einops.layers.torch import Rearrange
 import torch.nn.functional as F

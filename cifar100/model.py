@@ -1,8 +1,8 @@
 import torch
 import torch.nn as nn
-from spikingjelly.clock_driven.neuron import MultiStepParametricLIFNode, MultiStepLIFNode
-from timm.models.layers import to_2tuple, trunc_normal_, DropPath
-from timm.models.registry import register_model
+from spikingjelly.activation_based.neuron import MultiStepParametricLIFNode, MultiStepLIFNode
+from timm.layers import to_2tuple, trunc_normal_, DropPath
+from timm.models import register_model
 from timm.models.vision_transformer import _cfg
 from functools import partial
 from timm.models import create_model
