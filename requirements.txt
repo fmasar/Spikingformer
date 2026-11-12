@@ -1,6 +1,10 @@
 timm==1.0.30
 cupy-cuda13x==14.2.0
 torch==2.14.1
+torchvision==0.29.1
 spikingjelly==0.0.0.0.14
+numpy==2.5.4
+matplotlib==3.11.2
+pillow==13.0.0
 PyYAML==6.0.3
 tensorboard==2.21.0
